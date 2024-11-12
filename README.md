@@ -9,6 +9,7 @@ This project involves parallelizing a 3D Poisson equation solver using a Precond
 1. **Preliminary Profiling & Optimization**: Analyzed computational bottlenecks, identifying preconditioning steps, matrix-vector multiplications, and dot products as key areas for optimization.
 2. **Parallelization Strategy**:
    - **Unpreconditioned Code**: Optimized core functions (e.g., matrix-vector multiplication) using OpenMP, ensuring scalability for larger meshes.
+![image](https://github.com/user-attachments/assets/3d08dd70-ce1a-4137-8928-c3e4f32a9f84)
    - **Additive Schwarz Preconditioner**: Implemented Schwarz domain decomposition, efficiently managing boundaries and data copying to optimize multi-threaded execution.
 3. **Scalability Analysis**: Conducted strong and weak scaling tests, evaluating performance across thread counts and problem sizes to identify efficiency thresholds.
 4. **Advanced Analysis on Convergence Properties**: Explored convergence behaviors with different RHS configurations, highlighting the impact of frequency content on solver efficiency.
